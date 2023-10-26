@@ -1,13 +1,149 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap");
+@font-face {
+  font-family: 'CustomFont';
+  src: url('assests/Font/abnes.otf') format('opentype'),
+       url('assests/Font/abnes.ttf') format('truetype');
+  /* Add more src declarations for different file formats if needed */
+}
+* {
+  font-family: "Cutive Mono", monospace;
+}
+.welcome-page-right{
+  padding: 5em 3em;
+}
+.welcome-page-right p{
+  font-size: large;
+}
+.welcome-page-right h1{
+  font-family: 'CustomFont', sans-serif ;
+  color: rgb(0, 0, 0);
+}
+.outlined-btn{
+  background:none;
+  padding: 0.7em 1.5em;
+  border: 1.6px solid;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 400ms;
+}
+.outlined-btn-hover{
+  background:none;
+  padding: 0.7em 1.5em;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+
+}
+.outlined-btn:hover{
+  background: black;
+  color: #fff;
+}
+.outlined-btn-hover:hover{
+  border: 1.6px solid;
+}
+.portfolio-wrapper{
+  border: 1.6px solid #DFC8C8;
+  padding: 1em 4em;
+  width: 90%;
+  position: relative;
+  left: 5%;
+  margin-bottom: 2em;
+}
+.portfolio-left{
+  display: flex;
+  flex-direction: column;
+}
+.portfolio-left h1{
+  color: #0025FF;
+}
+.portfolio-left p{
+  font-size: large;
+  width: 60%;
+}
+.portfolio-right h1{
+  color: #0025FF;
+}
+.portfolio-right p{
+ width: 75%;
+ font-size: large;
+}
+.outline-blue{
+  background:none;
+  padding: 0.7em 1.5em;
+  border: 1.6px solid #0025FF;
+  font-weight: 600;
+  cursor: pointer; 
+  font-size: large;
+  color: #0b1864;
+}
+.outline-blue:hover{
+  background-color: #0b1864;
+  border: 1.6px solid #0b1864;
+  color: #fff;
+}
+.exp-h1{
+  text-align: center;
+  width: 100%;
+  font-size: 7em;
+}
+.about-left{
+  padding: 2em 6em;
+}
+.small-box{
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+}
+.small-box h1{
+  font-size: large;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.about-right{
+  padding: 2em 6em;
+}
+
+.linear-stack{
+  display: flex;
+  width: max-content;
+  justify-content: space-between;
+
+}
+.linear-stack li{
+  list-style: none;
+  border: 1px solid;
+  padding: 0.6em 1em;
+  margin-right: 1em;
+}
+.contact-right{
+  padding: 2em 6em;
+}
+.contact-left{
+  padding: 5em 6em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.contact-right h1{
+  font-size: 4.8em;
+}
+.form-input-wrapper{
+  display: flex;
+  flex-direction: column;
+}
+.form-input-wrapper span{
+  font-size: medium;
+}
+.form-input-wrapper input{
+  padding: 0.5em 0.2em;
+}
+.social-link{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2em;
+}
+.social-link a{
+  color: #000;
+}
+.social-link a:hover{
+  text-decoration: underline;
 }
